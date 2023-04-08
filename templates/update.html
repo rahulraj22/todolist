@@ -1,0 +1,35 @@
+{% extends 'base.html' %}
+{% block title %} Update {% endblock title %}
+{% block body %}
+    
+<!-- NavBar-bootstrap -->
+
+
+<div class="container my-3">
+    <h2>Update your Todo</h2>
+    <form action="/update/{{result[0]}}" method="post">
+        <div class="mb-3">
+            <label for="title" class="form-label">Todo Title</label>
+            <input name="title" type="text" class="form-control" id="title" value="{{result[1]}}" aria-describedby="emailHelp">
+        </div>
+        <div class="mb-3">
+            <label for="desc" class="form-label">Todo Description</label>
+            <input name="descb" type="text" class="form-control" id="desc" value="{{result[2]}}">
+        </div>
+        <div class="mb-3">
+            <label for="time" class="form-label">Time</label>
+            <input name="time" type="text" class="form-control" id="time" value="{{result[3]}}">
+        </div>
+        <!-- <button type="submit" class="btn btn-primary">Submit</button> -->
+        <button type="submit" class="btn btn-outline-dark">Update</button>
+        <!-- <input type="submit" class="btn btn-outline-dark"> -->
+    </form>
+</div>
+{% endblock body %}
+    
+
+
+<!-- IMP
+  -> value.sno => this doesn't work, but it worked in flask-sqlalchemy[harry-flask-tutorial]
+  -> | (pipe symbol) is a filter, So here this filter with length gives length of todoDetails
+-->

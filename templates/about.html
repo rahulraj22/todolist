@@ -1,0 +1,22 @@
+<link rel="stylesheet" href="{{ url_for('static', filename='css/about.css') }}">
+{% extends 'base.html' %}
+{% block title %}
+About
+{% endblock title %}
+{% block body %}
+
+<div class="container">
+    <header>
+        <h1>About</h1>
+    </header>
+    <main>
+        <p>This is a simple Todo List web app created using Flask and MySQL.</p>
+        <p>You can add, edit, and delete tasks, and mark them as completed.</p>
+        <p>It was created by <a href="https://github.com/rahulraj22" target="_blank">Rahul Raj</a> as a personal project
+            to learn more about Flask and MySQL.</p>
+    </main>
+    <footer>
+        <p>&copy; 2023 @rahulraj22. All rights reserved.</p>
+    </footer>
+</div>
+{% endblock body %}

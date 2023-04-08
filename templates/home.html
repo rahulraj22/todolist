@@ -1,0 +1,29 @@
+<link rel="stylesheet" href="{{ url_for('static', filename='css/about.css') }}">
+{% extends 'base.html' %}
+{% block title %}
+About
+{% endblock title %}
+{% block body %}
+
+<div class="container">
+    <header>
+        <h1>Home</h1>
+    </header>
+    <main>
+        <p>Welcome to Todo list page made using Flask - python framework and MySQL database.</p>
+        <p>In this WebApp, you can perform the CRUD operations as follows:-</p>
+        <ol>
+            <li>Create[C]: to create a todos</li>
+            <li>Read[R]: to read the added todos</li>
+            <li>Update[U]: to update created todos effortlessly</li>
+            <li>Delete[D]: to delete todos from the UI & database</li>
+        </ol>
+        <p>It was created by <a href="https://github.com/rahulraj22" target="_blank">Rahul Raj</a> as a personal project
+            to learn more about Flask and MySQL.</p>
+    </main>
+    <footer>
+        <p>&copy; 2023 @rahulraj22. All rights reserved.</p>
+        <p>Made with ❤ in India</p>
+    </footer>
+</div>
+{% endblock body %}
