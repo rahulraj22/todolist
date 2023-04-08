@@ -3,7 +3,7 @@ use todo;  -- Name of the database
 show tables;  -- to list down all tables
 
 -- to create a table named: todos
-create table todos(sno int primary key AUTO_INCREMENT, title varchar(40), descb varchar(200), date_created varchar(20));
+create table todos(sno int primary key AUTO_INCREMENT, title varchar(100), descb varchar(200), date_created varchar(20));
 
 desc todos;   -- to describe the table named todos
 
